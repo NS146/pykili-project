@@ -15,7 +15,6 @@ for stroka in f:
             d[key].append(en)
         else:
             d[key]=[en]
-f.close()
 
 
 for key in d:
@@ -26,4 +25,5 @@ res.write(str(len(d)) + '\n')
 for lat in sorted(d):
     res.write(lat + ' - ' + ', '.join(d[lat]) + '\n')
 
+f.close()
 res.close()
